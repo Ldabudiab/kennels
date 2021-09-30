@@ -1,7 +1,10 @@
 import React, {useState}  from "react"
 import { GetCurrentDate } from "../date/helpers"
-
+import { getQoutes } from "../qoutes/QuoteManager"
+import { Qoute } from "../qoutes/QouteCard"
 export const PropsAndState = ({ yourName, day }) => {
+
+
 
     let [countClicks, setCountClicks] = useState(0)
 
@@ -15,8 +18,9 @@ export const PropsAndState = ({ yourName, day }) => {
     return (
 
         <>
+        <Qoute />
         <h3>Welcome, {yourName} </h3>
-        <GetCurrentDate />
+        <GetCurrentDate /> 
         <p>{countClicks}</p>
         <button onClick={(handleClick)}>Click Me</button>
         </>
