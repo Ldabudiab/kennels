@@ -1,6 +1,5 @@
 import React, {useState}  from "react"
 import { GetCurrentDate } from "../date/helpers"
-import { getQoutes } from "../qoutes/QuoteManager"
 import { Qoute } from "../qoutes/QouteCard"
 export const PropsAndState = ({ yourName, day }) => {
 
