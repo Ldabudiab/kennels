@@ -2,10 +2,8 @@
   "animals": [
     {
       "id": 2,
-      "name": "Decker",
-      "breed": "German Shepherd",
-      "locationId": 1,
-      "customerId": 1
+      "name": "Deck",
+      "breed": "German Shepherd"
     },
     {
       "id": 3,
@@ -13,13 +11,26 @@
       "breed": "Pitbull",
       "locationId": 1,
       "customerId": 1
+    },
+    {
+      "name": "poopee",
+      "breed": "shitzu",
+      "locationId": 1,
+      "customerId": 1,
+      "id": 4
     }
   ],
   "customers": [
     {
       "id": 1,
       "name": "Paul",
-      "address": "101 Pakistan court"
+      "address": "101 Pakistan court",
+      "email": "paul@gmail.com"
+    },
+    {
+      "email": "la@la.com",
+      "name": "l a",
+      "id": 2
     }
   ],
   "employees": [
@@ -34,6 +45,11 @@
       "id": 1,
       "name": "Nashville North",
       "address": "8422 Johnson Pike"
+    },
+    {
+      "name": "Nashville south ",
+      "address": "123 street",
+      "id": 2
     }
   ]
 }
