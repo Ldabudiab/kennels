@@ -8,19 +8,18 @@ import { LocationList } from "./location/LocationList"
 import { AnimalDetail } from "./animal/AnimalDetail"
 import { AnimalForm } from "./animal/AnimalForm"
 import { LocationForm } from "./location/LocationForm"
-import { useState } from "react"
 import { Login } from "./auth/Login"
 import {Register} from "./auth/Register"
 import { AnimalEditForm } from "./animal/AnimalEditForm"
 
-export const ApplicationViews = () => {
+export const ApplicationViews = ({setAuthUser, isAuthenticated}) => {
 
-  const [isAuthenticated, setIsAuthenticated] = useState(sessionStorage.getItem("kennel_customer") !== null)
+  // const [isAuthenticated, setIsAuthenticated] = useState(sessionStorage.getItem("kennel_customer") !== null)
 
-  const setAuthUser = (user) => {
-    sessionStorage.setItem("kennel_customer", JSON.stringify(user))
-    setIsAuthenticated(sessionStorage.getItem("kennel_customer") !== null)
-  }
+  // const setAuthUser = (user) => {
+  //   sessionStorage.setItem("kennel_customer", JSON.stringify(user))
+  //   setIsAuthenticated(sessionStorage.getItem("kennel_customer") !== null)
+  // }
   
 
     return (
@@ -62,11 +61,7 @@ export const ApplicationViews = () => {
                 <Home />
             </Route>
 
-            {/* Render the animal list when http://localhost:3000/animals */}           
-            <Route exact path="/animals">
-                 <AnimalList />
-            </Route>
-
+            
             {/* Render the animal list when http://localhost:3000/locations */}
               <Route exact path="/locations">
               <LocationList />
