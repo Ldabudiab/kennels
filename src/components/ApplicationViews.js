@@ -49,7 +49,7 @@ export const ApplicationViews = () => {
 	              {isAuthenticated ? <EmployeeList /> : <Redirect to="/login" />}
             </Route>
 
-             <Route path="/login">
+             <Route exact path="/login">
 	              <Login setAuthUser={setAuthUser}/>
             </Route>
 
